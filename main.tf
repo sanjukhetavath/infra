@@ -1,8 +1,6 @@
-# Resource Group Module
-module "resoruce_group" {
-  source = "https://github.com/sanjukhetavath/module_resoruce_group.git/modules/resource_group"
+module "resource_group" {
+  source  = "github.com/sanjukhetavath/module_resource_group?ref=main"
 
-  name     = var.resoruce_group
+  name     = var.resource_group
   location = var.location
-  tags     = var.tags
 }
